@@ -1,10 +1,28 @@
+@font-face {
+  font-family: 'Josefin Sans Std Regular';
+  font-style: normal;
+  font-weight: 100;
+  src: local('Josefin Sans Std Regular'), url('JosefinSansStd-Light.woff') format('woff');
+  }
+  
+  
+  @font-face {
+  font-family: 'Josefin Sans Std Light';
+  font-style: normal;
+  font-weight: normal;
+  src: local('Josefin Sans Std Light'), url('JosefinSansStd-Light.woff') format('woff');
+  }
+
 body {
   margin: 0;
-  font-family: -apple-system, BlinkMacSystemFont, 'Segoe UI', 'Roboto', 'Oxygen',
-    'Ubuntu', 'Cantarell', 'Fira Sans', 'Droid Sans', 'Helvetica Neue',
-    sans-serif;
+  font-family: "Josefin Sans Std Regular";
+  background: linear-gradient(to right, rgb(220, 17, 236), rgb(15, 20, 247));
   -webkit-font-smoothing: antialiased;
   -moz-osx-font-smoothing: grayscale;
+}
+
+button {
+  cursor: pointer;
 }
 
 code {
