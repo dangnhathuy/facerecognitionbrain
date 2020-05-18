@@ -99,11 +99,11 @@ displayBox = (box) => {
       })
       .then(response => response.json())
       .then(count => {
-        this.setState(Object.assign(this.state.user, { entries:count }))
+        this.setState(Object.assign(this.state.user, { entries:count }));
       })
-      .catch(error => console.log(error))
+      .catch(error => console.log(error));
     }
-      this.displayBox(this.calculateFaceLocation(response))
+      this.displayBox(this.calculateFaceLocation(response));
     })
     .catch(error => console.log(error))
 }
@@ -112,10 +112,10 @@ displayBox = (box) => {
 
   onRouteChange = (route) => {
     if (route === 'signout') {
-      this.setState(initialState)
+      this.setState(initialState);
       route = 'signin';
     } else if (route === 'home') {
-      this.setState({isSignedIn: true})
+      this.setState({isSignedIn: true});
     } 
     this.setState({route: route});
   }
