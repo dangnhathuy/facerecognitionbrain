@@ -15,7 +15,6 @@
     "tachyons": "^4.11.1"
   },
   "scripts": {
-    "open": "react-scripts start",
     "start": "serve -s build",
     "build": "react-scripts build",
     "test": "react-scripts test",
